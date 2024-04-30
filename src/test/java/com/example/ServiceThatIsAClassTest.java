@@ -15,7 +15,7 @@ class ServiceThatIsAClassTest {
     @Inject OtherService otherService;
     @Inject ServiceThatIsAClass serviceThat;
 
-    @MockBean(ServiceThatIsAClass.class)
+    @MockBean
     ServiceThatIsAClass serviceThat() {
         return Mockito.mock(ServiceThatIsAClass.class);
     }
