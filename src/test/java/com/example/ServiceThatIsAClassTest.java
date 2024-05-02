@@ -6,17 +6,15 @@ import jakarta.inject.Inject;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 @MicronautTest
 class ServiceThatIsAClassTest {
 
 
     @Inject OtherService otherService;
-    @Inject ServiceThatIsAClass serviceThat;
+    @Inject SomeInterface serviceThat;
 
     @MockBean
-    ServiceThatIsAClass serviceThat() {
+    SomeInterface serviceThat() {
         return Mockito.mock(ServiceThatIsAClass.class);
     }
 

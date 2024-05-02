@@ -5,14 +5,14 @@ import jakarta.inject.Singleton;
 @Singleton
 public class OtherService {
 
-    private final ServiceThatIsAClass serviceThatIsAClass;
+    private final SomeInterface someInterface;
 
-    public OtherService(ServiceThatIsAClass serviceThat) {
-        this.serviceThatIsAClass = serviceThat;
+    public OtherService(SomeInterface serviceThat) {
+        this.someInterface = serviceThat;
     }
 
     public void doSomething() {
-        serviceThatIsAClass.doSomething();
+        someInterface.doSomething();
     }
 
 }
